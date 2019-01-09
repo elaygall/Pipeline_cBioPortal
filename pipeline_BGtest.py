@@ -49,7 +49,7 @@ class CreateMutsigFile(luigi.Task):
 
 class CreateFileSM(luigi.Task):
 
-    """ Create file with silenced mutations for oncodriveCLAST. """
+    """ Create file with silent mutations for oncodriveCLAST. """
 
     def requires(self):
         return [CreateMutsigFile()]
