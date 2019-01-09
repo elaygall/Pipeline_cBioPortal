@@ -1,0 +1,4 @@
+luigi==2.8.2
+requests==2.21.0
+pandas==0.23.4
+oncodriveclust==1.0.0
