@@ -11,13 +11,13 @@
 - Отфильтровывает гены с аннотацией MutSig
 
 ### CreateFileSM
-Создаёт файл с silent mutations для oncodriveCLUST
+- Создаёт файл с silent mutations для oncodriveCLUST
 
 ### CreateFileNotSM
-Создаёт файл с missense и nonsense mutations для oncodriveCLUST
+- Создаёт файл с missense и nonsense mutations для oncodriveCLUST
 
 ### OncodriveResult
-Запускает oncodriveCLUST передавая на вход необходимые параметры и записывает итоговый файл в директорию к остальным файлам
+- Запускает oncodriveCLUST передавая на вход необходимые параметры и записывает итоговый файл в директорию к остальным файлам
 
 ### FilterOncodriveRes
-Отфильтровывает NaN значения для результирующего файла oncodriveCLUST
+- Отфильтровывает NaN значения для результирующего файла oncodriveCLUST
