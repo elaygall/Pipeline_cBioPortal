@@ -4,20 +4,20 @@
 Директории расположены в репозитории cBioPortal: https://github.com/cBioPortal/datahub/tree/master/public
 
 ## Pipeline:
-## DownloadMutList
+### DownloadMutList
 - Скачивает MAF файл с аннотированными мутациями и создаёт директорию с названием, эквивалентным CANCER_TYPE
 
-## CreateMutsigFile
+### CreateMutsigFile
 - Отфильтровывает гены с аннотацией MutSig
 
-## CreateFileSM
+### CreateFileSM
 Создаёт файл с silent mutations для oncodriveCLUST
 
-## CreateFileNotSM
+### CreateFileNotSM
 Создаёт файл с missense и nonsense mutations для oncodriveCLUST
 
-## OncodriveResult
+### OncodriveResult
 Запускает oncodriveCLUST передавая на вход необходимые параметры и записывает итоговый файл в директорию к остальным файлам
 
-## FilterOncodriveRes
+### FilterOncodriveRes
 Отфильтровывает NaN значения для результирующего файла oncodriveCLUST
