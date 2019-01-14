@@ -49,7 +49,7 @@ class CreateMutsigFile(luigi.Task):
 
 class CreateFileSM(luigi.Task):
 
-    """ Create file with silent mutations for oncodriveCLAST. """
+    """ Create file with silent mutations for oncodriveCLUST. """
 
     def requires(self):
         return [CreateMutsigFile()]
@@ -67,7 +67,7 @@ class CreateFileSM(luigi.Task):
 
 
 class CreateFileNotSM(luigi.Task):
-    """Create file with the protein affecting mutations for oncodriveCLAST."""
+    """Create file with the protein affecting mutations for oncodriveCLUST."""
 
     def requires(self):
         return [CreateFileSM()]
@@ -88,7 +88,7 @@ class CreateFileNotSM(luigi.Task):
 
 class OncodriveResult(luigi.contrib.external_program.ExternalProgramTask):
 
-    """Run oncodriveCLAST for the selected dataset and get the result in *.tsv format. """
+    """Run oncodriveCLUST for the selected dataset and get the result in *.tsv format. """
 
     def requires(self):
         return [CreateFileNotSM()]
